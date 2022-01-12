@@ -31,13 +31,13 @@ client.on('message', async (message) => {
 
       if (command.toLowerCase() === 'anime-today') {
         const animeList = {
-          0: ['anime1', 'anime2'],
-          1: [],
-          2: ['anime3'],
-          3: ['anime4'],
-          4: ['anime6'],
-          5: [],
-          6: ['anime5'],
+          0: ['https://otakudesu.info/anime/op-sub-indo/'],
+          1: ['https://otakudesu.info/anime/kimetsu-yaiba-season-2-sub-indo/'],
+          2: ['https://otakudesu.info/anime/sabisco-sub-indo/'],
+          3: ['no anime'],
+          4: ['https://otakudesu.info/anime/orient-sub-indo/'],
+          5: ['no anime'],
+          6: ['no anime'],
         };
         const day = new Date().getDay();
         await message.reply(animeList[day]);
