@@ -39,7 +39,11 @@ client.on('message', async (message) => {
           5: ['no anime'],
           6: ['no anime'],
         };
-        const day = new Date().getDay();
+
+        var d = new Date();
+        var utc = d.getTime() + d.getTimezoneOffset() * 60000;
+        var nd = new Date(utc + 3600000 * 7);
+        var day = nd.getDay();
         console.log(day);
         await message.reply(animeList[day]);
       }
