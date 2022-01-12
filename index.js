@@ -40,6 +40,7 @@ client.on('message', async (message) => {
           6: ['no anime'],
         };
         const day = new Date().getDay();
+        console.log(day);
         await message.reply(animeList[day]);
       }
     }
