@@ -26,7 +26,7 @@ client.on('message', async (message) => {
       }
 
       if (command.toLowerCase() === 'fahri') {
-        await message.reply(`Hello Fahri!`);
+        await message.reply(`Farhi engga ganteng, huh! :3`);
       }
 
       if (command.toLowerCase() === 'anime-today') {
